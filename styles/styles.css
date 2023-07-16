@@ -24,7 +24,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #f4a866;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -735,7 +735,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   padding-top: 3.5rem;
-  
+  text-align: center;
 }
 
 .contact-content-con .left-contact {
