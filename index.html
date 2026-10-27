@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Ajinkya Patwardhan | AI &amp; Software Portfolio</title>
+    <meta name="description" content="Professional portfolio of Ajinkya Patwardhan: software developer focused on AI, automation and web applications.">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Additions for bio, value proposition, skill chips and artifact cards */
+        .vp-box { margin-top: 2rem; padding: 1.5rem; border-left: 4px solid currentColor; border-radius: 8px; background: rgba(127,127,127,.1); }
+        .vp-box h4 { margin-bottom: .6rem; }
+        .chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+        .chip { padding: .35rem .8rem; border-radius: 999px; font-size: .85rem; border: 1px solid rgba(127,127,127,.5); }
+        .artifacts { display: grid; gap: 2rem; margin-top: 2rem; }
+        .artifact-card { padding: 1.75rem; border-radius: 12px; background: rgba(127,127,127,.08); border: 1px solid rgba(127,127,127,.25); }
+        .artifact-card h3 { margin-bottom: .25rem; }
+        .artifact-card h5 { margin: 1.1rem 0 .3rem; font-size: 1rem; }
+        .artifact-card p, .artifact-card li { line-height: 1.7; }
+        .artifact-card ul { padding-left: 1.2rem; }
+        .artifact-tag { display: inline-block; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; opacity: .7; margin-bottom: .5rem; }
+        .artifact-link { display: inline-block; margin-top: 1rem; margin-right: 1rem; font-weight: 600; text-decoration: underline; }
+        .artifact-card.pending { opacity: .75; border-style: dashed; }
+        .artifact-embed { width: 100%; height: 420px; border: 0; border-radius: 8px; margin-top: 1rem; }
+        .edu-line { margin-top: .6rem; }
+    </style>
 </head>
 <body class="main-content">
+    <!-- ================= HOME ================= -->
     <header class="container header active" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
-                    <img src="img/hero.png" alt="">
+                    <img src="img/hero.png" alt="Portrait of Ajinkya Patwardhan">
                 </div>
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span>Ajinkya Vijay Patwardhan.</span>
-                    A Full Stack Developer.
+                    Hi, I'm <span>Ajinkya Patwardhan.</span>
+                    A Software Developer building with AI.
                 </h1>
                 <p>
-                    I'm a computer enthusiast with the goal of making useful and sustainable technology. I have a solid knowledge in Java, ReactJS and Angular.
+                    I build practical, reliable and sustainable technology, from web apps and automation to LLM-powered solutions. Strong in Java, Python, ReactJS and Angular, and growing as an AI/ML practitioner.
                 </p>
                 <div class="btn-con">
-                    <a href="./img/Resume__AjinkyaPatwardhan (1).pdf" class="main-btn" target="_blank">
+                    <a href="./img/Resume__Ajinkya.pdf" class="main-btn" target="_blank" rel="noopener">
                         <span class="btn-text">Download Resume </span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
@@ -37,19 +57,30 @@
             </div>
         </div>
     </header>
+
     <main>
+        <!-- ================= ABOUT ================= -->
         <section class="container about" id="about">
             <div class="main-title">
                 <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
             </div>
             <div class="about-container">
                 <div class="left-about">
-                    <h4>Information About me</h4>
+                    <h4>Professional Bio</h4>
                     <p>
-                        I'm a computer enthusiast with the goal of making useful and sustainable technology. I have a solid knowledge in Java, ReactJS and Angular. With years of experience in Web application development as well as some Front End development, I can tackle any task thrown my way. If you're not learning, then you are never doing anything at all. There is always more to learn, and more to build.
+                        I'm a software professional passionate about building practical and intelligent technology. I have a strong foundation in Java, Python, and web development. With experience in software automation, application development, and AI-driven solutions, I enjoy solving problems and creating reliable applications. Technology keeps evolving, and so do I. There is always more to learn, more to improve, and more to build.
                     </p>
+                    <p>
+                        I'm now deepening my skills in AI and machine learning through my program at Indiana Wesleyan University (IWU), with the goal of becoming a leader who applies AI responsibly to real business problems.
+                    </p>
+                    <div class="vp-box">
+                        <h4>Personal Value Proposition</h4>
+                        <p>
+                            I bridge software engineering and applied AI. I turn manual, repetitive processes into automated, intelligent workflows, and I back them with solid engineering in Java, Python, React and cloud tooling. Employers and collaborators get someone who can design the user experience, wire up an LLM or automation, test it, and explain it clearly to non-technical stakeholders.
+                        </p>
+                    </div>
                     <div class="btn-con">
-                        <a href="/img/Resume__AjinkyaPatwardhan (1).pdf" class="main-btn">
+                        <a href="./img/Resume__Ajinkya.pdf" class="main-btn" target="_blank" rel="noopener">
                             <span class="btn-text">Download Resume</span>
                             <span class="btn-icon"><i class="fas fa-download"></i></span>
                         </a>
@@ -58,8 +89,8 @@
                 <div class="right-about">
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">3</p>
-                            <p class="small-text">Projects <br /> Completed</p>
+                            <p class="large-text">5+</p>
+                            <p class="small-text">Projects</p>
                         </div>
                     </div>
                     <div class="about-item">
@@ -70,18 +101,13 @@
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">3</p>
-                            <p class="small-text">Happy <br /> Clients</p>
+                            <p class="large-text">3.83</p>
+                            <p class="small-text">Master's <br /> GPA</p>
                         </div>
                     </div>
-                  <!--   <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">40+</p>
-                            <p class="small-text">Customer <br /> reviews</p>
-                        </div>
-                    </div> -->
                 </div>
             </div>
+
             <div class="about-stats">
                 <h4 class="stat-title">My Skills</h4>
                 <div class="progress-bars">
@@ -89,448 +115,291 @@
                         <p class="prog-title">html5</p>
                         <div class="progress-con">
                             <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
+                            <div class="progress"><span class="html"></span></div>
                         </div>
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">css3</p>
                         <div class="progress-con">
                             <p class="prog-text">95%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
+                            <div class="progress"><span class="css"></span></div>
                         </div>
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">javascript</p>
                         <div class="progress-con">
                             <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
+                            <div class="progress"><span class="js"></span></div>
                         </div>
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">ReactJS</p>
                         <div class="progress-con">
                             <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
+                            <div class="progress"><span class="react"></span></div>
                         </div>
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">Angular</p>
                         <div class="progress-con">
                             <p class="prog-text">77%</p>
-                            <div class="progress">
-                                <span class="node"></span>
-                            </div>
+                            <div class="progress"><span class="node"></span></div>
                         </div>
                     </div>
                     <div class="progress-bar">
                         <p class="prog-title">MySql</p>
                         <div class="progress-con">
                             <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
+                            <div class="progress"><span class="python"></span></div>
                         </div>
                     </div>
                 </div>
+
+                <h4 class="stat-title" style="margin-top:2rem;">Technical Toolkit</h4>
+                <div class="chips">
+                    <span class="chip">Java</span><span class="chip">Python</span><span class="chip">NodeJS</span>
+                    <span class="chip">OpenAI ChatGPT</span><span class="chip">GitHub Copilot</span><span class="chip">Google Gemini</span>
+                    <span class="chip">SBERT</span><span class="chip">Hugging Face</span><span class="chip">Groq</span>
+                    <span class="chip">UiPath</span><span class="chip">Salesforce / Agentforce</span><span class="chip">AWS</span>
+                    <span class="chip">Tableau</span><span class="chip">Postman</span><span class="chip">GitHub</span>
+                    <span class="chip">Jupyter Notebook</span><span class="chip">Anaconda</span><span class="chip">VS Code</span>
+                </div>
             </div>
+
             <h4 class="stat-title">My Timeline</h4>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2022 - present</p>
-                    <h5>Student<span> - NJIT</span></h5>
-                    <p>
-                       Currently I'm pursuing my masters from NJIT with majors in computer science.
-                    </p>
+                    <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="tl-duration">Current</p>
+                    <h5>MS CS in AI Spec<span> - Indiana Wesleyan University</span></h5>
+                    <p>Building this portfolio as part of my coursework, applying AI concepts to real-world scenarios.</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
+                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-duration">Recent</p>
+                    <h5>Associate<span> - CVS</span></h5>
+                    <p>Built UiPath automations for the QLFEED CTE process and the Member Creation Tool (Commercial and MEDD), ran daily shakeouts, managed ServiceNow incidents and validated late-night production releases.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-duration">Recent</p>
+                    <h5>Salesforce Developer<span> - AvideonCRM LLC</span></h5>
+                    <p>Built Lightning record pages, Salesforce Surveys, auto-response rules and Agentforce agents and workflows that automate customer support and integrate with external APIs.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-duration">Recent</p>
+                    <h5>Software Engineer<span> - Sansar Tec</span></h5>
+                    <p>Built the React.js front end for Hireaide, an AI interview-automation platform. Integrated SBERT and Hugging Face Transformers (20% less manual processing time) and automated resume data extraction with UiPath Studio.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
+                    <p class="tl-duration">During Master's</p>
+                    <h5>Academic Assistant<span> - New Jersey Institute of Technology</span></h5>
+                    <p>Managed daily office operations and compiled reports using Excel and PowerPoint.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="tl-duration">Jan 2022 - Dec 2023</p>
+                    <h5>M.S. Computer Science<span> - New Jersey Institute of Technology</span></h5>
+                    <p>GPA: 3.83.</p>
+                </div>
+            <!--    <div class="timeline-item">
+                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
                     <p class="tl-duration">2019 - 2021</p>
-                    <h5>Software Engineer<span> - VAL2BIZ, Solutions.</span></h5>
-                    <p>
-                        Conduct a full range of programming tasks including analysis, coding, and debugging of complex program logic.
-                    </p>
+                    <h5>Software Engineer<span> - VAL2BIZ Solutions</span></h5>
+                    <p>Full range of programming tasks including analysis, coding and debugging of complex program logic.</p>
                 </div>
                 <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
+                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
                     <p class="tl-duration">2018 - 2019</p>
-                    <h5>Software Engineer<span> - Leegan Softwares </span></h5>
-                    <p>
-                        Develop user friendly, standards-compliant application interfaces.
-                    </p>
+                    <h5>Software Engineer<span> - Leegan Softwares</span></h5>
+                    <p>Developed user-friendly, standards-compliant application interfaces.</p>
                 </div>
-              
                 <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">2014 - 2018</p>
-                    <h5>BS Computer science<span> - Mumbai University</span></h5>
-                    <p>
-                        Course cirriculum included Datastructures,Operating Systems,Database and Testing
-                    </p>
-                </div>
-            </div>
+                    <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <p class="tl-duration">Aug 2014 - May 2018</p>
+                    <h5>B.E. Computer Science<span> - KGCE College of Engineering, University of Mumbai</span></h5>
+                    <p>GPA: 3.62. Coursework included data structures, operating systems, databases and testing.</p>
+                </div> -->
+            </div> 
         </section>
+
+        <!-- ================= ARTIFACTS ================= -->
         <section class="container" id="portfolio">
             <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+                <h2>My <span>Artifacts</span><span class="bg-text">My Work</span></h2>
             </div>
             <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
+                Each artifact below is a finished piece of work from my AI coursework, with its objective, process, tools and value. More artifacts are added as I complete each assignment.
             </p>
+
+            <div class="artifacts">
+
+                <!-- Artifact 1 -->
+                <article class="artifact-card" id="artifact-1">
+                    <span class="artifact-tag">Artifact 1</span>
+                    <h3>AI Timeline</h3>
+                    <h5>Introduction</h5>
+                    <p>A slide presentation that traces the history and major milestones of artificial intelligence.</p>
+                    <h5>Description</h5>
+                    <p>A visual timeline deck that walks an audience through key moments in AI's development.</p>
+                    <h5>Objective</h5>
+                    <p>To understand how AI evolved and to present that history clearly to a expert as well as layman audience.</p>
+                    <h5>Process</h5>
+                    <ul>
+                        <li>Researched major milestones and the people and ideas behind them.</li>
+                        <li>Selected the events that best show how the field progressed.</li>
+                        <li>Organized them chronologically and designed concise, visual slides.</li>
+                        <li>Reviewed and revised the deck for clarity and accuracy.</li>
+                    </ul>
+                    <h5>Tools and Technologies Used</h5>
+                    <p>Google Slides, web research, generative AI tools for brainstorming and review.</p>
+                    <h5>Value Proposition</h5>
+                    <p><strong>Unique Value:</strong> Shows my ability to research a complex topic and communicate it simply and visually.</p>
+                    <p><strong>Relevance:</strong> Understanding AI's history gives context for today's tools and helps me explain AI to business stakeholders.</p>
+                    <h5>References</h5>
+                    <p>References included in the slide deck</p>
+                    <a class="artifact-link" href="https://docs.google.com/presentation/d/15ipMMrD64X2Oa7NyI-DYvhAJnVmdcurr_iULre3Idlw/edit?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> View the AI Timeline presentation</a>
+                    <iframe class="artifact-embed" title="AI Timeline presentation" loading="lazy" src="https://docs.google.com/presentation/d/15ipMMrD64X2Oa7NyI-DYvhAJnVmdcurr_iULre3Idlw/embed?start=false&loop=false&delayms=3000"></iframe>
+                </article>
+
+                <!-- Artifact 2 -->
+                <article class="artifact-card" id="artifact-2">
+                    <span class="artifact-tag">Artifact 2</span>
+                    <h3>PlastiPal Chatbot</h3>
+                    <h5>Introduction</h5>
+                    <p>PlastiPal is a chatbot built as a surgeon-assistant, available online through BoodleBox.</p>
+                    <h5>Description</h5>
+                    <p>A conversational AI assistant focused on plastic surgery topics that answers questions in a clear, approachable way.</p>
+                    <h5>Objective</h5>
+                    <p>To learn how to design, configure and deploy a purpose-built chatbot for a specific audience.</p>
+                    <h5>Process</h5>
+                    <ul>
+                        <li>Defined the audience and the questions the bot should handle.</li>
+                        <li>Wrote the instructions and persona that guide its responses.</li>
+                        <li>Tested with realistic questions and refined the prompts.</li>
+                        <li>Published the bot so anyone can try it.</li>
+                    </ul>
+                    <h5>Tools and Technologies Used</h5>
+                    <p>BoodleBox chatbot platform, prompt engineering, generative AI.</p>
+                    <h5>Value Proposition</h5>
+                    <p><strong>Unique Value:</strong> Combines prompt design, audience focus and deployment into a working product.</p>
+                    <p><strong>Relevance:</strong> Domain-specific assistants like this are a growing use of AI, and it builds on my experience with LLMs and Agentforce agents.</p>
+                   <!--- <h5>References</h5>
+                    <p>[Add any references used.]</p> -->
+                    <a class="artifact-link" href="https://box.boodle.ai/a/@Dr.SurgeonAssistant" target="_blank" rel="noopener"><i class="fas fa-robot"></i> Try the PlastiPal chatbot</a>
+                    <a class="artifact-link" href="img/IMG1.jpg" target="_blank" rel="noopener"><img src="img/IMG1.jpg" width="100%" alt="Transcript"> </a>
+                </article>
+
+                <!-- Artifacts 3-5 -->
+           <!---     <article class="artifact-card pending" id="artifact-3">
+                    <span class="artifact-tag">Artifact 3 (coming soon)</span>
+                    <h3>[Title]</h3>
+                    <p>Introduction, Description, Objective, Process, Tools and Technologies Used, Value Proposition (Unique Value and Relevance), References, plus the deliverable file or link.</p>
+                </article>
+                <article class="artifact-card pending" id="artifact-4">
+                    <span class="artifact-tag">Artifact 4 (coming soon)</span>
+                    <h3>[Title]</h3>
+                    <p>Same artifact template as above.</p>
+                </article>
+                <article class="artifact-card pending" id="artifact-5">
+                    <span class="artifact-tag">Artifact 5 (coming soon)</span>
+                    <h3>[Title]</h3>
+                    <p>Same artifact template as above.</p>
+                </article> -->
+            </div>
+
+            <h4 class="stat-title" style="margin-top:3rem;">Projects</h4>
+            <p class="port-text">The following projects highlight my software development learning and implementation.</p>
             <div class="portfolios">
-             <!--    <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port1.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-               <!--  <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/Ajinkya107/Ajinkya_Patwardhan_E-Dac2020" class="icon">
-                                <i class="fab fa-github"></i>
-                                
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div> -->
-               <!--  <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port3.jpg" alt="">
-                    </div>
-                     <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://github.com/Ajinkya107/Ms_Project_Database" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div> 
-                </div> -->
                 <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
+                    <div class="image"><img src="img/port4.jpg" alt="Master's project database"></div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Master's Project Database</h3>
                         <div class="icons">
-                            <a href="https://github.com/Ajinkya107/Ms_Project_Database.git" target="_blank"      class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a> -->
+                            <a href="https://github.com/Ajinkya107/Ms_Project_Database.git" target="_blank" rel="noopener" class="icon"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
+                    <div class="image"><img src="img/port5.jpg" alt="NodeJS API"></div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>NodeJS API</h3>
                         <div class="icons">
-                            <a href="https://github.com/Ajinkya107/NodejS_Api.git" target="_blank" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a> -->
+                            <a href="https://github.com/Ajinkya107/NodejS_Api.git" target="_blank" rel="noopener" class="icon"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
+                    <div class="image"><img src="img/port2.jpg" alt="Sinatra word guesser"></div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>Sinatra Word Guesser</h3>
                         <div class="icons">
-                            <a href="https://github.com/Ajinkya107/hw-sinatra-saas-wordguesser.git" target="_blank" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                          <!--   <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a> -->
+                            <a href="https://github.com/Ajinkya107/hw-sinatra-saas-wordguesser.git" target="_blank" rel="noopener" class="icon"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
+                    <div class="image"><img src="img/port7.jpg" alt="E-DAC 2020 project"></div>
                     <div class="hover-items">
-                        <h3>Project Source</h3>
+                        <h3>E-DAC 2020 Project</h3>
                         <div class="icons">
-                            <a href="https://github.com/Ajinkya107/Ajinkya_Patwardhan_E-Dac2020.git" target="_blank" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <!-- <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-youtube"></i> -->
-                            </a>
+                            <a href="https://github.com/Ajinkya107/Ajinkya_Patwardhan_E-Dac2020.git" target="_blank" rel="noopener" class="icon"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Blogs</span><span class="bg-text">My Blogs</span></h2>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/port6.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Create Your Own Website
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Become an Expert in Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Become a Web Designer in 10 Days
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Debbuging made easy with Web Inspector
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Get started with Web Design and UI Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                This is what you need to know about Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+        <!-- ================= CONTACT ================= -->
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
                     <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
                 </div>
-                <div class="contact-content-con" >
+                <div class="contact-content-con">
                     <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <p>
-                            Fill out the form below to learn more!
-                        </p>
+                        <h4>Let's connect</h4>
+                        <p>I'm open to conversations about AI, automation and software roles.</p>
                         <div class="contact-info">
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    New Jersey, united states
-                                </p>
+                                <div class="icon"><i class="fas fa-map-marker-alt"></i><span>Location</span></div>
+                                <p>North Carolina, United States</p>
                             </div>
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email::</span>
-                                </div>
-                                <p>
-                                    <span>ajinkyapatwardhan1@gmail.com</span>
-                                </p>
+                                <div class="icon"><i class="fas fa-envelope"></i><span>Email</span></div>
+                                <p><span><a href="mailto:ajinkyapatwardhan1@gmail.com">ajinkyapatwardhan1@gmail.com</a></span></p>
                             </div>
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>NJIT, NJ</span>
-                                </p>
+                                <div class="icon"><i class="fas fa-user-graduate"></i><span>Education</span></div>
+                                <p><span>M.S. Computer Science, NJIT</span></p>
                             </div>
                             <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>6673283707</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>English, Hindi, Marathi</span>
-                                </p>
+                                <div class="icon"><i class="fas fa-globe-africa"></i><span>Languages</span></div>
+                                <p><span>English, Hindi, Marathi</span></p>
                             </div>
                         </div>
                         <div class="contact-icons">
                             <div class="contact-icon">
-                                <a href="https://www.facebook.com/ajinkya.patwardhan33/" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
+                                <a href="https://www.facebook.com/ajinkya.patwardhan33/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://github.com/Ajinkya107" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="right-contact">
-                       <!--  <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="/img/Resume__AjinkyaPatwardhan (1).pdf" class="main-btn">
-                                    <span class="btn-text">Download Resume</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form> -->
-                    </div>
+                    <div class="right-contact"></div>
                 </div>
             </div>
         </section>
     </main>
 
     <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <!-- <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div> -->
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
+        <div class="control active-btn" data-id="home"><i class="fas fa-home"></i></div>
+        <div class="control" data-id="about"><i class="fas fa-user"></i></div>
+        <div class="control" data-id="portfolio"><i class="fas fa-briefcase"></i></div>
+        <div class="control" data-id="contact"><i class="fas fa-envelope-open"></i></div>
     </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
+    <div class="theme-btn"><i class="fas fa-adjust"></i></div>
     <script src="app.js"></script>
 </body>
 </html>
