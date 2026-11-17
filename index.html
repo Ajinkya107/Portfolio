@@ -28,6 +28,10 @@
         .artifact-card.pending { opacity: .75; border-style: dashed; }
         .artifact-embed { width: 100%; height: 420px; border: 0; border-radius: 8px; margin-top: 1rem; }
         .edu-line { margin-top: .6rem; }
+        /* Keeps five navigation buttons from overflowing on phones */
+        @media screen and (max-width: 600px) {
+            .controls .control { width: 48px; height: 48px; margin: 1rem 0.2rem; }
+        }
     </style>
 </head>
 <body class="main-content">
@@ -204,29 +208,11 @@
                     <h5>M.S. Computer Science<span> - New Jersey Institute of Technology</span></h5>
                     <p>GPA: 3.83.</p>
                 </div>
-            <!--    <div class="timeline-item">
-                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
-                    <p class="tl-duration">2019 - 2021</p>
-                    <h5>Software Engineer<span> - VAL2BIZ Solutions</span></h5>
-                    <p>Full range of programming tasks including analysis, coding and debugging of complex program logic.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon"><i class="fas fa-briefcase"></i></div>
-                    <p class="tl-duration">2018 - 2019</p>
-                    <h5>Software Engineer<span> - Leegan Softwares</span></h5>
-                    <p>Developed user-friendly, standards-compliant application interfaces.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <p class="tl-duration">Aug 2014 - May 2018</p>
-                    <h5>B.E. Computer Science<span> - KGCE College of Engineering, University of Mumbai</span></h5>
-                    <p>GPA: 3.62. Coursework included data structures, operating systems, databases and testing.</p>
-                </div> -->
             </div> 
         </section>
 
         <!-- ================= ARTIFACTS ================= -->
-        <section class="container" id="portfolio">
+        <section class="container" id="artifacts">
             <div class="main-title">
                 <h2>My <span>Artifacts</span><span class="bg-text">My Work</span></h2>
             </div>
@@ -245,7 +231,7 @@
                     <h5>Description</h5>
                     <p>A visual timeline deck that walks an audience through key moments in AI's development.</p>
                     <h5>Objective</h5>
-                    <p>To understand how AI evolved and to present that history clearly to a expert as well as layman audience.</p>
+                    <p>To understand how AI evolved and to present that history clearly to an expert as well as a layman audience.</p>
                     <h5>Process</h5>
                     <ul>
                         <li>Researched major milestones and the people and ideas behind them.</li>
@@ -289,10 +275,10 @@
                    <!--- <h5>References</h5>
                     <p>[Add any references used.]</p> -->
                     <a class="artifact-link" href="https://box.boodle.ai/a/@Dr.SurgeonAssistant" target="_blank" rel="noopener"><i class="fas fa-robot"></i> Try the PlastiPal chatbot</a>
-                    <a class="artifact-link" href="img/IMG1.jpg" target="_blank" rel="noopener"><img src="img/IMG1.jpg" width="100%" alt="Transcript"> </a>
+                    <a class="artifact-link" href="img/IMG1.jpg" target="_blank" rel="noopener"><img src="img/IMG1.jpg" width="100%" alt="PlastiPal chatbot conversation transcript"> </a>
                 </article>
 
-             <!-- Artifact 3 -->
+                <!-- Artifact 3 -->
                 <article class="artifact-card" id="artifact-3">
                     <span class="artifact-tag">Artifact 3</span>
                     <h3>Machine Learning vs. Deep Learning Report</h3>
@@ -321,12 +307,48 @@
                         <li>AIML.com. <a href="https://aiml.com/" target="_blank" rel="noopener">aiml.com</a></li>
                     </ul>
                     <a class="artifact-link" href="img/Assignment_2.3.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> View the Machine Learning vs. Deep Learning report</a>
-                     <a class="artifact-link" href="img/house_price.png" target="_blank" rel="noopener"><img src="img/house_price.png" width="100%" alt="Transcript"> </a>
-                      <a class="artifact-link" href="img/viewcv.png" target="_blank" rel="noopener"><img src="img/viewcv.png" width="100%" alt="Transcript"> </a>
+                     <a class="artifact-link" href="img/house_price.png" target="_blank" rel="noopener"><img src="img/house_price.png" width="100%" alt="Home price estimate example"> </a>
+                      <a class="artifact-link" href="img/viewcv.png" target="_blank" rel="noopener"><img src="img/viewcv.png" width="100%" alt="Resume and job matching example"> </a>
                 </article>
-            </div>
 
-            <h4 class="stat-title" style="margin-top:3rem;">Projects</h4>
+                <!-- Add Artifact 4, 5, 6... here -->
+                <!-- Artifact 4 -->
+                <article class="artifact-card" id="artifact-4">
+                    <span class="artifact-tag">Artifact 4</span>
+                    <h3>Data Challenges in Machine Learning: Practice Conversation</h3>
+                    <h5>Introduction</h5>
+                    <p>A guided conversation with an AI coach in which I worked through three real-world machine learning scenarios covering data quality, fairness, and privacy and security.</p>
+                    <h5>Description</h5>
+                    <p>The scenarios were cleaning 800,000 customer reviews for a sentiment model, evaluating a résumé-screening model before deploying it in a new country, and designing a privacy-preserving collaboration between two hospitals. For each one, I explained my approach, answered follow-up questions, and received feedback. The complete transcript is linked below.</p>
+                    <h5>Objective</h5>
+                    <p>To show that I can discuss data processing and cleaning, and explain the challenges of data sharing, privacy, and security in machine learning applications.</p>
+                    <h5>Process</h5>
+                    <ul>
+                        <li><strong>Data quality:</strong> I quarantined flagged records with reason codes instead of deleting them, preserved emoji-only and multilingual reviews, and split data by group (using MinHash, LSH, or embedding similarity) so near-duplicates cannot leak between training and testing.</li>
+                        <li><strong>Bias and scaling:</strong> I identified proxy discrimination and distribution shift, and recommended delaying full deployment when 95% overall accuracy hid a 30% versus 8% false-negative gap between groups. I proposed shadow mode, local validation, and human review.</li>
+                        <li><strong>Privacy and security:</strong> I designed a federated learning collaboration with common data standards (OMOP, ICD-10, SNOMED CT, LOINC, RxNorm), then explained why privacy tools do not stop a backdoored update and how independent testing, update validation, and a neutral third party address it.</li>
+                        <li>I finished with a written reflection connecting these ideas to my software testing and automation experience.</li>
+                    </ul>
+                    <h5>Tools and Technologies Used</h5>
+                    <p>AI chatbot coach (ChatGPT) and generative AI assistance for drafting and refining my responses, with concepts including Pandas, NumPy, Matplotlib, StratifiedGroupKFold, federated learning (FedProx), secure aggregation, differential privacy, and fairness metrics. I reviewed and edited all responses to reflect my own understanding.</p>
+                    <h5>Value Proposition</h5>
+                    <p><strong>Unique Value:</strong> I treat a model like software that must be tested before release. My experience validating production releases and automating testing shapes how I look past headline accuracy and ask who a model fails and how we would know.</p>
+                    <p><strong>Relevance:</strong> Organizations deploying AI need people who can protect data quality, fairness, privacy, and model integrity. This artifact shows I can reason through those risks and recommend practical, responsible safeguards.</p>
+                    <h5>References</h5>
+                    <p>Course practice conversation, "Data Challenges in Machine Learning" (transcript linked below).</p>
+
+                    <a class="artifact-link" href="img/Transcript.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i> View the full practice conversation transcript</a>
+                    <a class="artifact-link" href="img/artifact4" target="_blank" rel="noopener"><img src="img/viewcv.png" width="100%" alt="Resume and job matching example"> </a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section class="container" id="projects">
+            <div class="main-title">
+                <h2>My <span>Projects</span><span class="bg-text">Projects</span></h2>
+            </div>
             <p class="port-text">The following projects highlight my software development learning and implementation.</p>
             <div class="portfolios">
                 <div class="portfolio-item">
@@ -385,7 +407,7 @@
                             </div>
                             <div class="contact-item">
                                 <div class="icon"><i class="fas fa-envelope"></i><span>Email</span></div>
-                                <p><span><a href="mailto:ajinkyavp1@gmail.com">ajinkyavp1@gmail.com</a></span></p>
+                                <p><span><a href="mailto:ajinkavp1@gmail.com">ajinkavp1@gmail.com</a></span></p>
                             </div>
                             <div class="contact-item">
                                 <div class="icon"><i class="fas fa-user-graduate"></i><span>Education</span></div>
@@ -412,7 +434,8 @@
     <div class="controls">
         <div class="control active-btn" data-id="home"><i class="fas fa-home"></i></div>
         <div class="control" data-id="about"><i class="fas fa-user"></i></div>
-        <div class="control" data-id="portfolio"><i class="fas fa-briefcase"></i></div>
+        <div class="control" data-id="artifacts"><i class="fas fa-folder-open"></i></div>
+        <div class="control" data-id="projects"><i class="fas fa-briefcase"></i></div>
         <div class="control" data-id="contact"><i class="fas fa-envelope-open"></i></div>
     </div>
     <div class="theme-btn"><i class="fas fa-adjust"></i></div>
